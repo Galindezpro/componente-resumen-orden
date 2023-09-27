@@ -1,0 +1,115 @@
+:root {
+    /* ## Colors
+
+    ### Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    /* fuente */
+    --fuente: 'Red Hat Display', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+}
+
+body {
+    font-size: 16px;
+    background: url(images/pattern-background-mobile.svg) top / contain no-repeat var(--Pale-blue);
+}
+
+.contenedor__primario {
+    min-width: 300px;
+    max-width: 1440px;
+    min-height: 100vh;
+    padding: 50px 20px;    
+}
+
+.contenedor__secundario {
+    min-width: 330px;
+    width: 375px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--Very-pale-blue);
+    border-radius: 20px;
+}
+
+.img__ilustracion {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+.p__parrafo {
+    margin: 0 50px;
+    color: var(--Desaturated-blue);
+}
+
+.div__precio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 38px;
+    background-color: rgb(240, 244, 247);
+    border-radius: 15px;
+    font-size: .8rem;
+    padding: 10px;
+    /* opacity: .9; */
+}
+
+.div__precio .div__precio--plan {
+    margin: 0 40px 0 30px;
+    position: relative;
+    right: 10px;
+    font-size: .66rem;
+    font-weight: 500;
+}
+
+.div__precio .div__precio--plan p {
+    font-size: .98rem;
+    color: var(--Desaturated-blue);
+}
+
+.btn {
+    width: 75%;
+    height: 50px;
+    border: none;
+    background: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cancel__order {
+    display: block;
+    margin: 36px 0;
+    padding-bottom: 36px;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        font-size: 16px;
+        background: url(images/pattern-background-desktop.svg) top / contain no-repeat var(--Pale-blue);
+    }
+}
