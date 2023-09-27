@@ -95,6 +95,7 @@ body {
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 700;
+    box-shadow: 2px 20px 120px 0 var(--Dark-blue);
 }
 
 .cancel__order {
@@ -109,7 +110,6 @@ body {
 
 @media screen and (min-width: 700px) {
     body {
-        font-size: 16px;
         background: url(images/pattern-background-desktop.svg) top / contain no-repeat var(--Pale-blue);
     }
 }
